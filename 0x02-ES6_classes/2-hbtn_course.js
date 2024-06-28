@@ -9,7 +9,7 @@ export default class HolbertonCourse {
   get name() { return this._name; }
 
   set name(name) {
-    if (name instanceof String) {
+    if (typeof name === 'string') {
       this._name = name;
     } else {
       throw new TypeError('Name must be a string');
