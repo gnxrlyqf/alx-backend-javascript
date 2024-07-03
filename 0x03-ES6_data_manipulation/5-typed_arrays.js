@@ -7,6 +7,6 @@ export default function createInt8TypedArray(length, position, value) {
     0,
     length,
   );
-  buf.setUInt8(position, value);
+  buf.setInt8(position, value);
   return buf;
 }
